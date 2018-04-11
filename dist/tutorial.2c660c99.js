@@ -19249,12 +19249,11 @@ var Board = function (_React$Component2) {
     value: function renderSquare(i) {
       var _this4 = this;
 
-      console.log(i);
       return _react2.default.createElement(Square, { value: this.props.squares[i], onClick: function onClick() {
           return _this4.props.onClick(i);
         }, key: i, __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 28
         },
         __self: this
       });
@@ -19268,7 +19267,7 @@ var Board = function (_React$Component2) {
           'div',
           { className: 'board-row', __source: {
               fileName: _jsxFileName,
-              lineNumber: 35
+              lineNumber: 34
             },
             __self: this
           },
@@ -19301,7 +19300,7 @@ var Board = function (_React$Component2) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 57
           },
           __self: this
         },
@@ -19309,7 +19308,7 @@ var Board = function (_React$Component2) {
           'div',
           { className: 'status', __source: {
               fileName: _jsxFileName,
-              lineNumber: 59
+              lineNumber: 58
             },
             __self: this
           },
@@ -19388,7 +19387,7 @@ var Game = function (_React$Component3) {
           'li',
           { key: move, __source: {
               fileName: _jsxFileName,
-              lineNumber: 115
+              lineNumber: 114
             },
             __self: _this6
           },
@@ -19398,7 +19397,7 @@ var Game = function (_React$Component3) {
                 return _this6.jumpTo(move);
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 116
+                lineNumber: 115
               },
               __self: _this6
             },
@@ -19411,7 +19410,7 @@ var Game = function (_React$Component3) {
         'div',
         { className: 'game', __source: {
             fileName: _jsxFileName,
-            lineNumber: 122
+            lineNumber: 121
           },
           __self: this
         },
@@ -19419,7 +19418,7 @@ var Game = function (_React$Component3) {
           'div',
           { className: 'game-board', __source: {
               fileName: _jsxFileName,
-              lineNumber: 123
+              lineNumber: 122
             },
             __self: this
           },
@@ -19430,7 +19429,7 @@ var Game = function (_React$Component3) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 124
+              lineNumber: 123
             },
             __self: this
           })
@@ -19439,7 +19438,7 @@ var Game = function (_React$Component3) {
           'div',
           { className: 'game-info', __source: {
               fileName: _jsxFileName,
-              lineNumber: 129
+              lineNumber: 128
             },
             __self: this
           },
@@ -19448,7 +19447,7 @@ var Game = function (_React$Component3) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 130
+                lineNumber: 129
               },
               __self: this
             },
@@ -19459,7 +19458,7 @@ var Game = function (_React$Component3) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 131
+                lineNumber: 130
               },
               __self: this
             },
@@ -19476,7 +19475,7 @@ var Game = function (_React$Component3) {
 _reactDom2.default.render(_react2.default.createElement(Game, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 139
+    lineNumber: 138
   },
   __self: undefined
 }), document.getElementById('container'));
