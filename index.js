@@ -10,9 +10,8 @@ class Square extends React.Component {
   }
   render() {
     return (
-      // stateをpropsに変えた
       <button className="square" onClick={() => this.props.onClick()}>
-        {this.props.value} 
+        {this.props.value}
       </button>
     );
   }
@@ -56,24 +55,6 @@ class Board extends React.Component {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
     return (
-      // <div>
-      //   <div className="status">{status}</div>
-      //   <div className="board-row">
-      //     {this.renderSquare(0)}
-      //     {this.renderSquare(1)}
-      //     {this.renderSquare(2)}
-      //   </div>
-      //   <div className="board-row">
-      //     {this.renderSquare(3)}
-      //     {this.renderSquare(4)}
-      //     {this.renderSquare(5)}
-      //   </div>
-      //   <div className="board-row">
-      //     {this.renderSquare(6)}
-      //     {this.renderSquare(7)}
-      //     {this.renderSquare(8)}
-      //   </div>
-      // </div>
       <div>
         <div className="status">{status}</div>
           {this.renderSquares()}
@@ -92,7 +73,7 @@ class Game extends React.Component {
       stepNumber: 0
     };
   }
-  
+
   handleClick(i) {
     var history = this.state.history.slice(0, this.state.stepNumber + 1);
     var current = history[history.length - 1]; //一個前のマス情報の入ったオブジェクト
@@ -119,24 +100,24 @@ class Game extends React.Component {
     const history = this.state.history;
     const current = history[this.state.stepNumber];  //今のマス情報
     const winner = calculateWinner(current.squares);
-    
+
     let status;
     if (winner) {
       status = 'Winner: ' + winner;
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
-    const moves = history.map((step, move) => {  //引数: value, index, array
+    const moves = history.map((step, move) => {
       const desc = move ?
         'Move #' + move :
         'Game Start';  //aタグの文字,１番目だけ違う
       return (
-        <li key={move}> {/*兄弟との区別をつけるために、同じタグのものが兄弟になったらkeyが必要*/}
+        <li key={move}>
           <a href="#" onClick={() => this.jumpTo(move)}>{desc}</a>
         </li>
       );
     });
-    
+
     return (
       <div className="game">
         <div className="game-board">
@@ -153,7 +134,7 @@ class Game extends React.Component {
     );
   }
 }
-// ========================================
+
 ReactDOM.render(
   <Game />,
   document.getElementById('container')
@@ -177,4 +158,3 @@ function calculateWinner(squares) {
   }
   return null;
 }
-

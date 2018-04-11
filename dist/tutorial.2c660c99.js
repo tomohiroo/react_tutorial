@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({15:[function(require,module,exports) {
+})({12:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -168,7 +168,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],14:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -186,7 +186,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],16:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -223,7 +223,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],10:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 /** @license React v16.3.1
  * react.production.min.js
  *
@@ -336,7 +336,7 @@ var V = { Children: { map: function (a, b, e) {
     W = Object.freeze({ default: V }),
     X = W && V || W;
 module.exports = X["default"] ? X["default"] : X;
-},{"object-assign":15,"fbjs/lib/emptyObject":14,"fbjs/lib/emptyFunction":16}],22:[function(require,module,exports) {
+},{"object-assign":12,"fbjs/lib/emptyObject":10,"fbjs/lib/emptyFunction":11}],17:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -390,7 +390,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],23:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -453,7 +453,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":16}],25:[function(require,module,exports) {
+},{"./emptyFunction":11}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -467,7 +467,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],24:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -527,7 +527,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":22,"fbjs/lib/warning":23,"./lib/ReactPropTypesSecret":25}],11:[function(require,module,exports) {
+},{"fbjs/lib/invariant":17,"fbjs/lib/warning":18,"./lib/ReactPropTypesSecret":23}],7:[function(require,module,exports) {
 /** @license React v16.3.1
  * react.development.js
  *
@@ -1931,7 +1931,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":15,"fbjs/lib/emptyObject":14,"fbjs/lib/invariant":22,"fbjs/lib/warning":23,"fbjs/lib/emptyFunction":16,"prop-types/checkPropTypes":24}],8:[function(require,module,exports) {
+},{"object-assign":12,"fbjs/lib/emptyObject":10,"fbjs/lib/invariant":17,"fbjs/lib/warning":18,"fbjs/lib/emptyFunction":11,"prop-types/checkPropTypes":19}],4:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1939,7 +1939,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":10,"./cjs/react.development.js":11}],17:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":6,"./cjs/react.development.js":7}],13:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1973,7 +1973,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],18:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2010,7 +2010,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],19:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2076,7 +2076,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],28:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2099,7 +2099,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],21:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2122,7 +2122,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":28}],20:[function(require,module,exports) {
+},{"./isNode":26}],16:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2160,7 +2160,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":21}],12:[function(require,module,exports) {
+},{"./isTextNode":22}],8:[function(require,module,exports) {
 /** @license React v16.3.1
  * react-dom.production.min.js
  *
@@ -2407,7 +2407,7 @@ var Gg={createPortal:Fg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 D("40");return a._reactRootContainer?(X.unbatchedUpdates(function(){Eg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:function(){return Fg.apply(void 0,arguments)},unstable_batchedUpdates:X.batchedUpdates,unstable_deferredUpdates:X.deferredUpdates,flushSync:X.flushSync,unstable_flushControlled:X.flushControlled,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:Qa,EventPluginRegistry:xa,EventPropagators:jb,ReactControlledComponent:Zb,ReactDOMComponentTree:Xa,
 ReactDOMEventListener:Zd},unstable_createRoot:function(a,b){return new sg(a,!0,null!=b&&!0===b.hydrate)}};X.injectIntoDevTools({findFiberByHostInstance:Ta,bundleType:0,version:"16.3.1",rendererPackageName:"react-dom"});var Hg=Object.freeze({default:Gg}),Ig=Hg&&Gg||Hg;module.exports=Ig["default"]?Ig["default"]:Ig;
 
-},{"react":8,"fbjs/lib/ExecutionEnvironment":17,"object-assign":15,"fbjs/lib/emptyFunction":16,"fbjs/lib/getActiveElement":18,"fbjs/lib/shallowEqual":19,"fbjs/lib/containsNode":20,"fbjs/lib/emptyObject":14}],30:[function(require,module,exports) {
+},{"react":4,"fbjs/lib/ExecutionEnvironment":13,"object-assign":12,"fbjs/lib/emptyFunction":11,"fbjs/lib/getActiveElement":14,"fbjs/lib/shallowEqual":15,"fbjs/lib/containsNode":16,"fbjs/lib/emptyObject":10}],24:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2438,7 +2438,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],26:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2475,7 +2475,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":30}],29:[function(require,module,exports) {
+},{"./hyphenate":24}],25:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2505,7 +2505,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],27:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2543,7 +2543,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":29}],13:[function(require,module,exports) {
+},{"./camelize":25}],9:[function(require,module,exports) {
 /** @license React v16.3.1
  * react-dom.development.js
  *
@@ -19131,7 +19131,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":8,"fbjs/lib/invariant":22,"fbjs/lib/warning":23,"fbjs/lib/ExecutionEnvironment":17,"object-assign":15,"fbjs/lib/emptyFunction":16,"prop-types/checkPropTypes":24,"fbjs/lib/getActiveElement":18,"fbjs/lib/shallowEqual":19,"fbjs/lib/containsNode":20,"fbjs/lib/emptyObject":14,"fbjs/lib/hyphenateStyleName":26,"fbjs/lib/camelizeStyleName":27}],9:[function(require,module,exports) {
+},{"react":4,"fbjs/lib/invariant":17,"fbjs/lib/warning":18,"fbjs/lib/ExecutionEnvironment":13,"object-assign":12,"fbjs/lib/emptyFunction":11,"prop-types/checkPropTypes":19,"fbjs/lib/getActiveElement":14,"fbjs/lib/shallowEqual":15,"fbjs/lib/containsNode":16,"fbjs/lib/emptyObject":10,"fbjs/lib/hyphenateStyleName":20,"fbjs/lib/camelizeStyleName":21}],5:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -19167,7 +19167,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":12,"./cjs/react-dom.development.js":13}],4:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":8,"./cjs/react-dom.development.js":9}],2:[function(require,module,exports) {
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -19211,20 +19211,17 @@ var Square = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return (
-        // stateをpropsに変えた
-        _react2.default.createElement(
-          'button',
-          { className: 'square', onClick: function onClick() {
-              return _this2.props.onClick();
-            }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 14
-            },
-            __self: this
+      return _react2.default.createElement(
+        'button',
+        { className: 'square', onClick: function onClick() {
+            return _this2.props.onClick();
+          }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
           },
-          this.props.value
-        )
+          __self: this
+        },
+        this.props.value
       );
     }
   }]);
@@ -19257,7 +19254,7 @@ var Board = function (_React$Component2) {
           return _this4.props.onClick(i);
         }, key: i, __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 29
         },
         __self: this
       });
@@ -19271,7 +19268,7 @@ var Board = function (_React$Component2) {
           'div',
           { className: 'board-row', __source: {
               fileName: _jsxFileName,
-              lineNumber: 36
+              lineNumber: 35
             },
             __self: this
           },
@@ -19299,46 +19296,26 @@ var Board = function (_React$Component2) {
       } else {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
-      return (
-        // <div>
-        //   <div className="status">{status}</div>
-        //   <div className="board-row">
-        //     {this.renderSquare(0)}
-        //     {this.renderSquare(1)}
-        //     {this.renderSquare(2)}
-        //   </div>
-        //   <div className="board-row">
-        //     {this.renderSquare(3)}
-        //     {this.renderSquare(4)}
-        //     {this.renderSquare(5)}
-        //   </div>
-        //   <div className="board-row">
-        //     {this.renderSquare(6)}
-        //     {this.renderSquare(7)}
-        //     {this.renderSquare(8)}
-        //   </div>
-        // </div>
+      return _react2.default.createElement(
+        'div',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58
+          },
+          __self: this
+        },
         _react2.default.createElement(
           'div',
-          {
-            __source: {
+          { className: 'status', __source: {
               fileName: _jsxFileName,
-              lineNumber: 77
+              lineNumber: 59
             },
             __self: this
           },
-          _react2.default.createElement(
-            'div',
-            { className: 'status', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 78
-              },
-              __self: this
-            },
-            status
-          ),
-          this.renderSquares()
-        )
+          status
+        ),
+        this.renderSquares()
       );
     }
   }]);
@@ -19406,24 +19383,22 @@ var Game = function (_React$Component3) {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
       var moves = history.map(function (step, move) {
-        //引数: value, index, array
         var desc = move ? 'Move #' + move : 'Game Start'; //aタグの文字,１番目だけ違う
         return _react2.default.createElement(
           'li',
           { key: move, __source: {
               fileName: _jsxFileName,
-              lineNumber: 134
+              lineNumber: 115
             },
             __self: _this6
           },
-          ' ',
           _react2.default.createElement(
             'a',
             { href: '#', onClick: function onClick() {
                 return _this6.jumpTo(move);
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 135
+                lineNumber: 116
               },
               __self: _this6
             },
@@ -19436,7 +19411,7 @@ var Game = function (_React$Component3) {
         'div',
         { className: 'game', __source: {
             fileName: _jsxFileName,
-            lineNumber: 141
+            lineNumber: 122
           },
           __self: this
         },
@@ -19444,7 +19419,7 @@ var Game = function (_React$Component3) {
           'div',
           { className: 'game-board', __source: {
               fileName: _jsxFileName,
-              lineNumber: 142
+              lineNumber: 123
             },
             __self: this
           },
@@ -19455,7 +19430,7 @@ var Game = function (_React$Component3) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 143
+              lineNumber: 124
             },
             __self: this
           })
@@ -19464,7 +19439,7 @@ var Game = function (_React$Component3) {
           'div',
           { className: 'game-info', __source: {
               fileName: _jsxFileName,
-              lineNumber: 148
+              lineNumber: 129
             },
             __self: this
           },
@@ -19473,7 +19448,7 @@ var Game = function (_React$Component3) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 149
+                lineNumber: 130
               },
               __self: this
             },
@@ -19484,7 +19459,7 @@ var Game = function (_React$Component3) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 150
+                lineNumber: 131
               },
               __self: this
             },
@@ -19497,13 +19472,11 @@ var Game = function (_React$Component3) {
 
   return Game;
 }(_react2.default.Component);
-// ========================================
-
 
 _reactDom2.default.render(_react2.default.createElement(Game, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 158
+    lineNumber: 139
   },
   __self: undefined
 }), document.getElementById('container'));
@@ -19521,7 +19494,7 @@ function calculateWinner(squares) {
   }
   return null;
 }
-},{"react":8,"react-dom":9}],6:[function(require,module,exports) {
+},{"react":4,"react-dom":5}],27:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -19551,7 +19524,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52588' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53881' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -19690,5 +19663,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[6,4])
+},{}]},{},[27,2])
 //# sourceMappingURL=/tutorial.2c660c99.map
